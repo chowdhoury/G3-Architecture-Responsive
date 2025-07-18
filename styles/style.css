@@ -37,9 +37,6 @@
   border-radius: 8px;
   padding: 20px 25px;
 }
-main > section {
-  margin-top: 130px;
-}
 .feature-description,
 .banner-description {
   font-size: 1rem;
@@ -50,6 +47,24 @@ main > section {
     font-size: 2.8rem;
     font-weight: 800;
   }
+.section-description{
+  max-width: 542px;
+  margin-top: 24px;
+}
+.navbar,
+.banner,
+.some-facts,
+.sponsor {
+  max-width: 1440px;
+  margin: auto;
+}
+section {
+  margin-top: 130px;
+}
+
+
+
+
 
 /* Header Section  */
 header {
@@ -76,12 +91,7 @@ header {
   font-weight: 500;
   font-size: 1.6rem;
 }
-.navbar,
-.banner,
-.some-facts {
-  max-width: 1440px;
-  margin: auto;
-}
+
 
 /* Banner Section  */
 .banner {
@@ -127,10 +137,6 @@ header {
 .some-facts{
     
 }
-.fact-description{
-    max-width: 542px;
-    margin-top: 24px;
-}
 .fact-container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -158,6 +164,34 @@ header {
   font-weight: 600;
 }
 
+/* Sponsor Section  */
+.sponsor{
+  margin-top: 130px;
+}
+.sponsor-info{
+  max-width: 542px;
+  margin: auto;
+  text-align: center;
+}
+.sponsor-description{
+  margin-top: 24px;
+}
+.sponsor-conpanies{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponsor-conpanies img{
+  height: 50px;
+  margin-top: 50px;
+  filter: grayscale(100%);
+}
+
+
+
+
+
+
+
 /* Responsive  */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -165,12 +199,19 @@ header {
   .teams {
     flex-direction: column;
   }
-  .team-image-container {
+  .team-image-container,.fact-container,.sponsor-conpanies {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .fact-container{
+    justify-items: center;
+    gap: 24px;
   }
   .our-features {
     margin-left: 20px;
     margin-top: 20px;
+  }
+  .sponsor-conpanies{
+    justify-items: center;
   }
 }
 
@@ -181,4 +222,13 @@ header {
   .our-features {
     margin: 50px auto;
   }
+  .fact-container{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 24px;
+  }
+.sponsor-conpanies{
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+}
 }
