@@ -187,6 +187,20 @@ header {
 }
 
 
+/* Footer Section  */
+footer{
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 130px;
+  text-align: center;
+}
+footer p{
+  background-color: #FFF4E7;
+  font-size: 1.5rem;
+  padding: 20px 0px;
+}
+
+
 
 
 
@@ -227,8 +241,8 @@ header {
     justify-items: center;
     gap: 24px;
   }
-.sponsor-conpanies{
-  grid-template-columns: repeat(3,1fr);
-  justify-items: center;
-}
+  .sponsor-conpanies{
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+  }
 }
